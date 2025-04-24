@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .div-container {
+    max-width: 1070px;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid black;
+    background: url('yellow-bread.jpg') no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  header {
+    background-color: #8b3a3a;
+    color: white;
+    padding: 10px 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  nav a:hover {
+    color: #ffd5a4;
+  }
+
+  .section {
+    padding: 40px;
+  }
+
+  .welcome {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .welcome img {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .welcome-text {
+    flex: 1;
+  }
+
+  .welcome-text h1 {
+    color: #8b3a3a;
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .welcome-text p {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.8;
+    color: #4b2c2c;
+    margin-bottom: 20px;
+  }
+
+  .welcome-buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  .welcome-buttons a {
+    text-decoration: none;
+    padding: 10px 25px;
+    background-color: #8b3a3a;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  .welcome-buttons a:hover {
+    background-color: #a74f4f;
+  }
+
+  .footer {
+    background-color: #8b3a3a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+  }
+</style>
+</head>
+
+<body>
+<div class="div-container">
+  <header>
+    <nav>
+      <a href="index.html"class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="pages.html">Pages</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="section welcome">
+    <img src="logo.jpg" alt="Aling Conching Bakery Image" />
+    <div class="welcome-text">
+      <h1>Welcome to Aling Conching!</h1>
+      <p>Experience the taste of tradition with freshly baked bread, pastries, and home-cooked meals. From our signature pandesal to hearty Filipino dishes, we serve comfort food that feels like home. Visit us today and enjoy a warm, delicious meal made with love!</p>
+
+      <div class="welcome-buttons">
+        <a href="menu.html">Order Now!</a>
+        <a href="contact.html">Visit Us!</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    &copy; 2025 Aling Conching Bakery’s Canteen. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
+

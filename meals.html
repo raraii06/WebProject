@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<head>
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .div-container {
+  max-width: 1070px;
+  margin: auto;
+  padding: 0px; 
+  border: 1px solid black;
+  background: url('yellow-bread.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+
+
+    header {
+      background-color: #8b3a3a;
+      color: white;
+      padding: 10px 0;
+      
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+    }
+       
+.menu-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      
+      margin-top: 30px;
+    }
+
+
+
+
+    nav a:hover {
+      color: #ffd5a4;
+    }
+
+    
+
+    .menu-item {
+      background: #efe6dc;
+      border-radius: 15px;
+      padding: 15px;
+      width: 200px;
+      flex-shrink: 0;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .menu-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+     
+    }
+
+    .menu-info h3 {
+      font-size: 18px;
+      color: #8b3a3a;
+      margin: 10px 0 5px;
+    }
+
+    .menu-info p {
+      font-size: 18px;
+      color: #4b2c2c;
+      
+    }
+
+    .checkbox-container {
+       margin-top: 10px;
+      font-size: 20px;
+      color: #8b3a3a;
+    }
+
+    .submit-section {
+      text-align: center;
+      margin-top: 30px;
+
+      
+    }
+
+    .submit-btn {
+      background-color: #8b3a3a;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #a44b4b;
+    }
+
+    .footer {
+      background-color: #8b3a3a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="div-container">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html"class="active">Menu</a>
+        <a href="pages.html">Pages</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <form action="index.html" method="get">
+      
+      <div class="menu-item">
+        <img src="silog meals.jpg" alt="Silog Meals">
+        <div class="menu-info">
+          <h3>Silog Meals</h3>
+          <p>Tapsilog, Longsilog, Bangsilog &amp; more</p>
+        </div>
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" name="order" value="Silog Meals">
+            Add to Order
+          </label>
+        </div>
+      </div>
+
+    
+      <div class="menu-item">
+        <img src="lutong bahay specials.jpg" alt="Lutong Bahay Specials">
+        <div class="menu-info">
+          <h3>Lutong Bahay Specials</h3>
+          <p>Sinigang, Kare-Kare, Adobo &amp; more</p>
+        </div>
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" name="order" value="Lutong Bahay Specials">
+            Add to Order
+          </label>
+        </div>
+      </div>
+
+     
+      <div class="menu-item">
+        <img src="merienda favorites.jpg" alt="Merienda Favorites">
+        <div class="menu-info">
+          <h3>Merienda Favorites</h3>
+          <p>Pancit, Arroz Caldo, Goto &amp; more</p>
+        </div>
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" name="order" value="Merienda Favorites">
+            Add to Order
+          </label>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="drinks.jpg" alt="Drinks">
+        <div class="menu-info">
+          <h3>Drinks</h3>
+          <p>Sago't Gulaman, Iced Tea, Coffee &amp; more</p>
+        </div>
+        <div class="checkbox-container">
+          <label>
+            <input type="checkbox" name="order" value="Drinks">
+            Add to Order
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <div class="submit-section">
+      <button type="submit" formmethod="get" formaction="index.html" class="submit-btn">
+        Submit Order
+      </button>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Aling Conching Bakery’s Canteen. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

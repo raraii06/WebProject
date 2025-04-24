@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .div-container {
+      max-width: 1070px;
+      margin: auto;
+      flex: 1;
+      padding-bottom: 20px;
+    }
+
+    header {
+      background-color: #8b3a3a;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    nav a:hover {
+      color: #ffd5a4;
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 40px;
+      gap: 40px;
+      background: url('yellow-bread.jpg') no-repeat center center;
+      background-size: cover;
+      border-radius: 0px;
+    }
+
+    .left-side {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      text-align: center;
+    }
+
+    .left-side h2 {
+      font-size: 44px;
+      color: #8b3a3a;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .left-side p {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 25px;
+      max-width: 80%;
+    }
+
+    .lola-image {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .lola-image img {
+      width: 300px;
+      border-radius: 15px;
+    }
+
+    .lola-image h3 {
+      font-size: 22px;
+      margin-top: 10px;
+      color: #4b2c2c;
+    }
+
+    .contact-info {
+      background: #ffe5cc;
+      padding: 15px 20px;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .contact-info h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #8b3a3a;
+    }
+
+    .contact-info ul {
+      font-size: 18px;
+      padding-left: 20px;
+      line-height: 1.8;
+      
+    }
+
+    .contact-info li {
+      margin-bottom: 5px;
+    }
+
+    .right-side {
+      flex: 0.9;
+      background: #f5e9e0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .right-side h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #8b3a3a;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-group label {
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 8px;
+      font-size: 14px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+    }
+
+    .form-actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .form-actions button {
+      background-color: #8b3a3a;
+      color: white;
+      padding: 8px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .form-actions button:hover {
+      background-color: #a14646;
+    }
+
+    .footer {
+      background-color: #8b3a3a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="div-container">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="pages.html">Pages</a>
+        <a href="contact.html"class="active">Contact</a>
+      </nav>
+    </header>
+
+    <section class="section">
+      <div class="left-side">
+        <h2>Contact Us</h2>
+        <h3>We'd love to hear from you! Here's how to reach us.</h3>
+<div class="lola-image">
+          <img src="lola.jpg" alt="Lola at the Bakery">
+          <h3>Meet Lola Conching, the heart of our bakery!</h3>
+        </div>
+
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li>☎️: 0912 345 6789</li>
+            <li>📧: acbakery'scanteen@gmail.com</li>
+            <li>📍: San Pablo City, Laguna</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <h3>Send Feedback or Rate Us!</h3>
+        <form>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="feedback">Your Feedback</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Write your feedback here..."></textarea>
+          </div>
+          <div class="form-group">
+            <label for="rating">Rate Us</label>
+            <select id="rating" name="rating">
+              <option value="">Select</option>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Very Good</option>
+              <option value="3">3 - Good</option>
+              <option value="2">2 - Fair</option>
+              <option value="1">1 - Poor</option>
+            </select>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Submit Feedback</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      &copy; 2025 Aling Conching Bakery’s Canteen. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

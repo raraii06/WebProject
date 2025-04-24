@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+ 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+ .div-container {
+      max-width: 1070px;
+      margin: auto;
+      padding: 0px;
+      border: 1px solid black;
+      background: url('yellow-bread.jpg') no-repeat center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+
+    header {
+      background-color: #8b3a3a;
+      color: white;
+      padding: 10px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    nav a:hover {
+      color: #ffd5a4;
+    }
+
+    .menu-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      background: #efe6dc;
+      border-radius: 15px;
+      padding: 15px;
+      width: 200px;
+      
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .menu-item img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .menu-info h3 {
+      font-size: 18px;
+      color: #8b3a3a;
+      margin: 10px 0 5px;
+    }
+
+    .menu-info p {
+      font-size: 18px;
+      color: #4b2c2c;
+    }
+
+    .checkbox-container {
+      margin-top: 10px;
+      font-size: 20px;
+      color: #8b3a3a;
+      
+    }
+
+    .submit-section {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .submit-btn {
+      background-color: #8b3a3a;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #a44b4b;
+    }
+
+    .footer {
+      background-color: #8b3a3a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div-container">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html"class="active">Menu</a>
+        <a href="pages.html">Pages</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+      
+   <form action="index.html" method="get">
+
+
+    <div class="menu-container">
+      <div class="menu-item">
+        <img src="tinapay.jpg" alt="Pandesal">
+        <div class="menu-info">
+          <h3>Pandesal</h3>
+          <p>Soft and warm, best paired with coffee</p>
+        </div>
+        <div class="checkbox-container">
+          <label><input type="checkbox" name="order" value="Pandesal"> Add to Order</label>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ensaymada.jpg" alt="Ensaymada">
+        <div class="menu-info">
+          <h3>Ensaymada</h3>
+          <p>Buttery and cheesy goodness</p>
+        </div>
+        <div class="checkbox-container">
+          <label><input type="checkbox" name="order" value="Ensaymada"> Add to Order</label>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="spanish bread.jpg" alt="Spanish Bread">
+        <div class="menu-info">
+          <h3>Spanish Bread</h3>
+          <p>Sweet and fluffy treat</p>
+        </div>
+        <div class="checkbox-container">
+          <label><input type="checkbox" name="order" value="Spanish Bread"> Add to Order</label>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <img src="ube cheese.jpg" alt="Ube Cheese Pandesal">
+        <div class="menu-info">
+<h3>Ube Cheese Pandesal</h3>
+          <p>A modern twist on a classic favorite</p>
+        </div>
+        <div class="checkbox-container">
+          <label><input type="checkbox" name="order" value="Ube Cheese Pandesal"> Add to Order</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="submit-section">
+      <button class="submit-btn">Submit Order</button>
+    </div>
+
+    <footer class="footer">
+      &copy; 2025 Aling Conching Bakery’s Canteen. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>

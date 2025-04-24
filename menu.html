@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+  }
+
+     .div-container {
+      max-width: 1070px;
+      margin: auto;
+      padding: 0px;
+      border: 1px solid black;
+      background: url('yellow-bread.jpg') no-repeat center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+
+  header {
+    background-color: #8b3a3a;
+    color: white;
+    padding: 10px 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  nav a:hover {
+    color: #ffd5a4;
+  }
+
+  .section {
+    padding: 25px 45px;
+    max-width: 888px;
+    margin: auto;
+  }
+
+   .section h2 {
+   text-align: center;
+   margin-bottom: 10px;
+   color: #8b3a3a;
+   font-size: 30px;
+   font-weight: 700;
+   }
+   
+   .section p{
+   text-align: center;
+   margin-bottom: 30px;
+   font-size: 25px;
+   color: #4b2c2c;
+   font-weight: 500;
+   } 
+
+  .welcome {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .welcome img {
+    max-width: 260px;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .welcome-text {
+    flex: 1;
+  }
+
+  .welcome-text h2 {
+    color: #8b3a3a;
+    margin-bottom: 10px;
+  }
+
+
+
+
+  .welcome-text button {
+    background-color: #ff914d;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .welcome-text button:hover {
+    background-color: #ff7c1a;
+  }
+
+.section.menu {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.menu-box {
+  flex: 0 1 380px;
+  background: #efe6dc;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.menu-box:hover {
+  transform: translateY(-5px);
+}
+
+.menu-box img {
+  width: 85%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+  .menu-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8b3a3a;
+  }
+
+  .menu-box button {
+    background-color: #ff914d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .menu-box button:hover {
+    background-color: #ff7c1a;
+  }
+
+.btn-link {
+  display: inline-block;
+  background-color: #ff914d;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.btn-link:hover {
+  background-color: #ff7c1a;
+}
+
+
+
+
+  .footer {
+    background-color: #8b3a3a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+  }
+</style>
+
+  </head>
+
+<body>
+<div class="div-container">
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html"class="active">Menu</a>
+      <a href="pages.html">Pages</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+      <section class="section menu">
+  <h2>Browse Our Menu</h2>
+  <p>Explore our delicious selection of baked goods and meals:</p>
+
+  <div class="menu-container">
+    <div class="menu-box">
+      <img src="pandesal.jpg" alt="Baked Goods">
+      <a href="goods.html" class="btn-link">🔍View Baked Goods</a>
+    </div>
+
+    <div class="menu-box">
+      <img src="spoon and fork.jpg" alt="Meals">
+      <a href="meals.html" class="btn-link">🔍View Meals</a>
+    </div>
+  </div>
+</section>
+  
+
+  <footer class="footer">
+    &copy; 2025 Aling Conching Bakery’s Canteen. All rights reserved.
+  </footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+  
